@@ -39,10 +39,6 @@ body {
   text-decoration: none;
 }
 
-.link.current {
-  color: var(--accent-color);
-}
-
 /* Button */
 
 .button {
@@ -106,6 +102,10 @@ body {
 }
 
 .header-nav .link:hover,.header-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
   color: var(--accent-color);
 }
 
