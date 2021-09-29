@@ -18,9 +18,10 @@
 }
 
 body {
-  background-color: var(--primary-white-color);
+  background-color: #E5E5E5;
   color: var(--primary-text-color);
 
+  width: 1600px;
   font-family: Roboto, sans-serif;
   font-size: var(--primary-font-size);
   line-height: 1.71;
@@ -29,14 +30,41 @@ body {
   letter-spacing: 0.03em;
 }
 
+header {
+  background-color: var(--primary-white-color);
+}
+
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-/* Link */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.container.no-padding{
+  padding:0;
+}
+
 
 .link {
   text-decoration: none;
+}
+
+p{
+  padding: 0;
+  margin: 0;
 }
 
 /* Button */
@@ -45,6 +73,7 @@ body {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 
 .button.primary {
@@ -86,11 +115,38 @@ body {
 
 /* Site nav */
 
+.header-nav{
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.header-nav,.site-nav,.contacts{
+  display: flex;
+  align-items: center;
+}
+
+.site-nav{
+  margin-left: 93px;
+}
+
+.contacts{
+  margin-left: auto;
+}
+
+
 .site-nav .link,
 .contacts .link{
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font-weight: 500;
   line-height: 1.14;
 }
+
+.contacts li + li, .site-nav li + li {
+  margin-left: 12px;
+}
+
 
 .site-nav .link{
   color: var(--common-title-color);
@@ -109,18 +165,70 @@ body {
   color: var(--accent-color);
 }
 
+.link.current:hover {
+  color: var(--common-title-color);
+}
+
+/* Section */
+
+.title{
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--secondary-title-size);
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section{
+  background-color: var(--primary-white-color);
+  margin-top: 0;
+  padding: 94px 0;
+}
+
+.section .list {
+  display: flex;
+  justify-content: center;
+}
+
+.section .list .item{
+  width: 270px;
+}
+
+.section .item+.item{
+  margin-left: 30px;
+}
+
+
 /* Hero */
 
 .hero{
-  background-color: #E5E5E5;
+  padding: 0;
+  background-color: var(--footer-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: var(--first-title-size);
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -132,24 +240,10 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* Section */
+/* Samples */
 
-.title{
-  color: var(--common-title-color);
-
-  font-weight: 700;
-  font-size: var(--primary-font-size);
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.section-title {
-  color: var(--common-title-color);
-
-  font-weight: 700;
-  font-size: var(--secondary-title-size);
-  line-height: 1.17;
-  text-align: center;
+.samples .list .item{
+  width: 370px;
 }
 
 /* Command */
@@ -164,7 +258,6 @@ body {
 
 .command .name{
   color: var(--common-title-color);
-
   font-weight: 500;
 }
 
@@ -199,20 +292,57 @@ body {
 
 /* Works */
 
-.works{
+.works, .works-nav{
   background-color: var(--primary-white-color);
 }
 
-.works .name {
-  color: var(--common-title-color);
+.works-nav-list{
+  display:flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 34px;
+}
 
+.works-nav-item {
+  align-self: flex-start;
+}
+
+.works-nav-item + .works-nav-item {
+  margin-left: 8px;
+}
+
+.works-nav .button {
+  padding: 6px 22px;
+}
+
+.works-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.works-list>.sample{
+  margin: 15px;
+  width: 370px;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.description-container{
+  padding: 20px 24px;
+}
+
+.description-container>.name {
+  margin: 0;
+  color: var(--common-title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.works .type{
+.description-container>.type{
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
