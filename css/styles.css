@@ -9,6 +9,8 @@
   --common-title-color: #212121;
   --footer-color: #2F303A;
   --footer-hyperlink-color:rgba(255, 255, 255, 0.6);
+  --svg-footer-color:rgba(255, 255, 255, 0.1);
+  --svg-social-color:#AFB1B8;
 
   --logo-font-size:26px;
   --primary-font-size:14px;
@@ -323,7 +325,7 @@ p{
 .clients-list .item{
   height: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--svg-social-color);
 }
 
 .clients-list .item:hover{
@@ -348,7 +350,7 @@ p{
 
 .address{
   color: var(--primary-white-color);
-  font-style: normal;
+  font-style: inherit;
 }
 
 .link-footer{
@@ -432,14 +434,14 @@ p{
   margin: 0;
   color: var(--common-title-color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--portfolio-title-size);
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .description-container>.type{
   color: var(--primary-text-color);
-  font-size: 16px;
+  font-size: var(--portfolio-font-size);
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
@@ -471,12 +473,12 @@ p{
 }
 
 .footer .item-social{
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--svg-footer-color);
   color: var(--primary-white-color);
 }
 
 .command .item-social{
-  color: #AFB1B8;
+  color: var(--svg-social-color);
 }
 
 .item-social:hover{
@@ -489,5 +491,5 @@ p{
 }
 
 .item-social.current:hover{
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--svg-footer-color);
 }
