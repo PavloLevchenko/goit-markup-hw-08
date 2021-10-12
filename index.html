@@ -15,17 +15,17 @@
     <!-- Шапка -->
     <header>
       <div class="container">
-        <nav class="header-nav">
-          <a class="link logo" href="/">
+        <nav class="header-nav v-centered">
+          <a class="link logo" href="./">
             Web<span>Studio</span>
           </a>
-          <ul class="site-nav list">
+          <ul class="site-nav v-centered list">
             <li><a class="link current" href="./index.html">Студия</a></li>
             <li><a class="link" href="./portfolio.html">Портфолио</a></li>
             <li><a class="link" href="">Контакты</a></li>
           </ul>
 
-          <ul class="contacts list">
+          <ul class="contacts v-centered list">
             <li class="centered current"><svg class="icon current" width="16" height="12"><use href="./images/icons.svg#envelope"></use></svg><a class="link current" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="centered"><svg class="icon" width="15" height="12"><use href="./images/icons.svg#smartphone"></use></svg><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
@@ -42,33 +42,33 @@
       <!-- Особенности -->
       <section class="section peculiarities">
         <div class="container">
-          <h2 class="section-title">Особенности</h2>
-          <ul class="list peculiarities-list">
-            <li class="item centered"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#antenna1"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#clock1"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#diagram1"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#astronaut1"></use></svg></li>
+          <h2 class="section-title visually-hidden">Особенности</h2>
+          <ul class="list g-centered peculiarities-icons">
+            <li class="item centered peculiarities-item"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#antenna1"></use></svg></li>
+            <li class="item centered peculiarities-item"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#clock1"></use></svg></li>
+            <li class="item centered peculiarities-item"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#diagram1"></use></svg></li>
+            <li class="item centered peculiarities-item"><svg class="icon" width="70" height="70"><use href="./images/icons.svg#astronaut1"></use></svg></li>
           </ul>
-          <ul class="list">
-            <li class="item">
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="section-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+          <ul class="list g-centered">
+            <li class="item peculiarities-item">
+              <h3 class="title peculiarities-title">Внимание к деталям</h3>
+              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="item">
-              <h3 class="title">Пунктуальность</h3>
-              <p class="section-description">
+            <li class="item peculiarities-item">
+              <h3 class="title peculiarities-title">Пунктуальность</h3>
+              <p>
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
-              <h3 class="title">Планирование</h3>
-              <p class="section-description">
+            <li class="item peculiarities-item">
+              <h3 class="title peculiarities-title">Планирование</h3>
+              <p>
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="item">
-              <h3 class="title">Современные технологии</h3>
-              <p class="section-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <li class="item peculiarities-item">
+              <h3 class="title peculiarities-title">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -77,28 +77,28 @@
       <section class="section samples">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li class="item">
+          <ul class="list g-centered samples-list">
+            <li class="item samples-item">
               <a href="">
-                <img
+                <img class="img"
                   src="./images/work1.jpg"
                   alt="Человек печатает на клавиатуре, рядом на столе расположена схема, планшет и два монитора"
                   width="370"
                 />
               </a>
             </li>
-            <li class="item">
+            <li class="item samples-item">
               <a href="">
-                <img
+                <img class="img"
                   src="./images/work2.jpg"
                   alt="Человек держит в руке телефон и смотрит на макет на ноутбуке"
                   width="370"
                 />
               </a>
             </li>
-            <li class="item">
+            <li class="item samples-item">
               <a href="">
-                <img
+                <img class="img"
                   src="./images/work3.jpg"
                   alt="Человек выбирает цвет на графическом планшете"
                   width="370"
@@ -112,49 +112,61 @@
       <section class="section command">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li class="item">
-              <a href="">
-                <img src="./images/product_designer.jpg" alt="Игорь Демьяненко" width="270" />
+          <ul class="list g-centered command-list">
+            <li class="item command-item">
+              <a class="link" href="">
+                <img class="img" src="./images/product_designer.jpg" alt="Игорь Демьяненко" width="270" />
+                <div class="command-description-container">
+                  <h3 class="title command-name">Игорь Демьяненко</h3>
+                  <p class="command-role" lang="en">Product Designer</p>
+                </div>
               </a>
-              <h3 class="name">Игорь Демьяненко</h3>
-              <p class="role" lang="en">Product Designer</p>
-              <ul class="list list-social">
+              <ul class="list g-centered list-social">
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#instagram1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#twitter1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#facebook1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#linkedin1"></use></svg></li>
               </ul>
             </li>
-            <li class="item">
-              <a href="">
-                <img src="./images/frontend_developer.jpg " alt="Ольга Репина" width="270" />
+            <li class="item command-item">
+              <a class="link" href="">
+                <img class="img" src="./images/frontend_developer.jpg " alt="Ольга Репина" width="270" />
+                <div class="command-description-container">
+                  <h3 class="title command-name">Ольга Репина</h3>
+                  <p class="command-role" lang="en">Frontend Developer</p>
+                </div>
               </a>
-              <h3 class="name">Ольга Репина</h3>
-              <p class="role" lang="en">Frontend Developer</p>
-              <ul class="list list-social">
+              <ul class="list g-centered list-social">
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#instagram1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#twitter1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#facebook1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#linkedin1"></use></svg></li>
               </ul>
             </li>
-            <li class="item">
-              <a href=""><img src="./images/marketing.jpg" alt="Николай Тарасов" width="270" /></a>
-              <h3 class="name">Николай Тарасов</h3>
-              <p class="role" lang="en">Marketing</p>
-              <ul class="list list-social">
+            <li class="item command-item">
+              <a class="link" href="">
+                <img class="img" src="./images/marketing.jpg" alt="Николай Тарасов" width="270" />
+                <div class="command-description-container">
+                  <h3 class="title command-name">Николай Тарасов</h3>
+                  <p class="command-role" lang="en">Marketing</p>
+                </div>
+              </a>
+              <ul class="list g-centered list-social">
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#instagram1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#twitter1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#facebook1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#linkedin1"></use></svg></li>
               </ul>
             </li>
-            <li class="item">
-              <a href=""><img src="./images/ui_designer.jpg" alt="Михаил Ермаков" width="270" /></a>
-              <h3 class="name">Михаил Ермаков</h3>
-              <p class="role" lang="en">UI Designer</p>
-              <ul class="list list-social">
+            <li class="item command-item">
+              <a class="link" href="">
+                <img class="img" src="./images/ui_designer.jpg" alt="Михаил Ермаков" width="270" />
+                <div class="command-description-container">
+                  <h3 class="title command-name">Михаил Ермаков</h3>
+                  <p class="command-role" lang="en">UI Designer</p>
+                </div>
+              </a>
+              <ul class="list g-centered list-social">
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#instagram1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#twitter1"></use></svg></li>
                 <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#facebook1"></use></svg></li>
@@ -168,33 +180,35 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list clients-list">
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client1"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client2"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client3"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client4"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client5"></use></svg></li>
-            <li class="item centered"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client6"></use></svg></li>
+          <ul class="list g-centered clients-list">
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client1"></use></svg></li>
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client2"></use></svg></li>
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client3"></use></svg></li>
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client4"></use></svg></li>
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client5"></use></svg></li>
+            <li class="item centered clients-item"><svg class="icon" width="106" height="60"><use href="./images/icons.svg#client6"></use></svg></li>
           </ul>
         </div>
       </section>
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <div class="container no-padding">
+      <div class="container v-centered no-padding">
         <div class="address-block">
-        <a class="logo logo-footer link" href="/">
+        <a class="logo logo-footer link" href="./">
           Web<span>Studio</span>
         </a>
         <address class="address">
-            г. Киев, пр-т Леси Украинки, 26 <br/>
-            <a class="link link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a> <br/>
-            <a class="link link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+          <ul class="list address-list">
+            <li class="address-item"><a class="link link-footer-primary" href="https://goo.gl/maps/P5hhrZKVmuoFHLja6" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="address-item"><a class="link link-footer" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="address-item"><a class="link link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
         </address>
       </div>
       <div class="social-block">
         <h3 class="title-social">Присоединяйтесь</h3>
-        <ul class="list list-social">
+        <ul class="list g-centered list-social">
           <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#instagram1"></use></svg></li>
           <li class="item-social centered current"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#twitter1"></use></svg></li>
           <li class="item-social centered"><svg class="icon" width="20" height="20"><use href="./images/icons.svg#facebook1"></use></svg></li>
