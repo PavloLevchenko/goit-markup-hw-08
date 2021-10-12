@@ -248,6 +248,8 @@ p, h1, h2, h3, h4, h5, h6{
 /* Hero */
 
 .hero{
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
   background-color: var(--hero-bg-color);
   text-align: center;
