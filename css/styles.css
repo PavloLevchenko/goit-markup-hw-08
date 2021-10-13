@@ -347,7 +347,7 @@ margin-bottom: 16px;
 
 /* Clients */
 
-.clients-item{
+.clients-link{
   width: 170px;
   height: 92px;
   color: var(--svg-social-color);
@@ -355,9 +355,8 @@ margin-bottom: 16px;
   border-radius: 4px;
 }
 
-.clients-item:hover{
+.clients-link:hover, .clients-link:focus{
   border: 1px solid var(--accent-color);
-  color: var(--accent-color);
 }
 
 /* Footer */
