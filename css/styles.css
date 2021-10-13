@@ -90,6 +90,18 @@ body {
   letter-spacing: inherit;
 }
 
+.link:hover, .link:focus{
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.link.current:hover, .link.current:focus{
+  color: inherit;
+}
+
 p, h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
@@ -113,7 +125,7 @@ p, h1, h2, h3, h4, h5, h6{
   background-color: var(--accent-color);
 }
 
-.button.primary:hover {
+.button.primary:hover, .button.primary:focus {
   color: var(--common-title-color);
   background-color: var(--secondary-white-color);
 }
@@ -123,7 +135,7 @@ p, h1, h2, h3, h4, h5, h6{
   background-color: var(--secondary-white-color);
 }
 
-.button.secondary:hover {
+.button.secondary:hover, .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -153,33 +165,16 @@ p, h1, h2, h3, h4, h5, h6{
   border-bottom: 1px solid var(--header-border-color);
 }
 
-
 .site-nav{
   margin-left: 93px;
 }
 
-.contacts{
-  margin-left: auto;
+.site-nav li + li {
+  margin-left: 50px;
 }
 
-.contacts .link{
-  margin-left: 10px;
-}
-
-.contacts li:hover{
-  color: var(--accent-color);
-}
-
-.contacts li.current {
-  color: var(--accent-color);
-}
-
-.contacts li.current:hover {
-  color: var(--primary-text-color);
-}
-
-.site-nav .link,
-.contacts .link{
+.site-nav-link,
+.contacts-link{
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -189,37 +184,30 @@ p, h1, h2, h3, h4, h5, h6{
   letter-spacing: 0.02em;
 }
 
-.site-nav li + li {
-  margin-left: 50px;
+.site-nav-link{
+  color: var(--common-title-color);
+}
+
+.site-nav-link.current:hover, .site-nav-link.current:focus {
+  color: var(--common-title-color);
+}
+
+.contacts{
+  margin-left: auto;
 }
 
 .contacts li + li{
   margin-left: 30px;
 }
 
-.site-nav .link{
-  color: var(--common-title-color);
+.contacts span{
+  margin-left: 10px;
 }
 
-.contacts .link{
+.contacts-link{
   color: var(--primary-text-color);
 }
 
-.header-nav .link:hover,.header-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.link.current {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current:hover {
-  color: var(--common-title-color);
-}
-
-.contacts .link.current:hover {
-  color: var(--primary-text-color);
-}
 
 /* Section */
 
@@ -255,7 +243,7 @@ p, h1, h2, h3, h4, h5, h6{
   text-align: center;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
-    rgba(196, 196, 196, 1)
+    rgba(47, 48, 58, 0.4)
   ),
   url("../images/hero_img.jpg");
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -307,13 +295,13 @@ p, h1, h2, h3, h4, h5, h6{
   padding: 3px 0;
 }
 
-.peculiarities-icons>.peculiarities-item{
+.peculiarities-icon-container{
   background-color: var(--secondary-white-color);
   height: 120px;
   margin-bottom: 30px;
 }
 
-.peculiarities-icons .icon{
+.peculiarities-icon-container>.icon{
   fill: var(--common-title-color);
 }
 
@@ -362,23 +350,14 @@ margin-bottom: 16px;
 .clients-item{
   width: 170px;
   height: 92px;
+  color: var(--svg-social-color);
   border: 1px solid var(--svg-social-color);
+  border-radius: 4px;
 }
 
 .clients-item:hover{
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-}
-
-.clients-item.current{
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
-
-
-.clients-item.current:hover{
-  border: 1px solid var(--svg-social-color);
-  color: inherit;
 }
 
 /* Footer */
@@ -426,11 +405,6 @@ margin-bottom: 16px;
 
 .footer .link-social{
   background-color: var(--svg-footer-color);
-  color: var(--primary-white-color);
-}
-
-.footer .link-social.current:hover{
-  background: var(--svg-footer-color);
   color: var(--primary-white-color);
 }
 
@@ -521,7 +495,7 @@ margin-bottom: 16px;
   color: var(--svg-social-color);
 }
 
-.link-social:hover{
+.link-social:hover, .link-social:focus{
   background: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -531,7 +505,7 @@ margin-bottom: 16px;
   color: var(--primary-white-color);
 }
 
-.link-social.current:hover{
+.link-social.current:hover, .link-social.current:focus{
   background: var(--svg-footer-color);
   color: var(--svg-social-color);
 }
