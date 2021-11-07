@@ -498,7 +498,7 @@ h6 {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  width: 370px;
+  flex-basis: 370px;
   transition: box-shadow var(--transition);
 }
 
