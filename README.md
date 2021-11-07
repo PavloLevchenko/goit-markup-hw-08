@@ -1,3 +1,3 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-https://pavlolevchenko.github.io/goit-markup-hw-05/
+https://pavlolevchenko.github.io/goit-markup-hw-06/
