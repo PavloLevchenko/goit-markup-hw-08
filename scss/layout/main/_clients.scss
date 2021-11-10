@@ -1,0 +1,11 @@
+.clients-link {
+	width: 170px;
+	height: 92px;
+	color: var(--svg-social-color);
+	border: 1px solid var(--svg-social-color);
+	border-radius: 4px;
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-color);
+	}
+}

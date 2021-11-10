@@ -1,0 +1,15 @@
+.contacts {
+	margin-left: auto;
+
+	& span {
+		margin-left: 10px;
+	}
+}
+
+.contacts li + li {
+	margin-left: 30px;
+}
+
+.contacts-link {
+	color: var(--primary-text-color);
+}

@@ -1,0 +1,40 @@
+.title-social {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+	margin-bottom: 20px;
+}
+
+.item-social + .item-social {
+	margin-left: 10px;
+}
+
+.link-social {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	&:hover,
+	&:focus {
+		background: var(--accent-color);
+		color: var(--primary-white-color);
+	}
+
+	&.current {
+		background: var(--accent-color);
+		color: var(--primary-white-color);
+
+		&:hover,
+		&:focus {
+			background: var(--svg-footer-color);
+			color: var(--svg-social-color);
+		}
+	}
+}
+
+.footer-link-social {
+	background-color: var(--svg-footer-color);
+	color: var(--primary-white-color);
+}

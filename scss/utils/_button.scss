@@ -1,0 +1,30 @@
+.button {
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	letter-spacing: inherit;
+	transition: color var(--transition), background-color var(--transition);
+
+	&.primary {
+		color: var(--primary-white-color);
+		background-color: var(--accent-color);
+
+		&:hover,
+		&:focus {
+			color: var(--common-title-color);
+			background-color: var(--secondary-white-color);
+		}
+	}
+
+	&.secondary {
+		color: var(--common-title-color);
+		background-color: var(--secondary-white-color);
+
+		&:hover,
+		&:focus {
+			color: var(--primary-white-color);
+			background-color: var(--accent-color);
+		}
+	}
+}

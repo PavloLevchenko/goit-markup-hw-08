@@ -1,6 +1,9 @@
 //UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/link";
+@import "./utils/centered";
+@import "./utils/button";
 
 //BASE
 @import "./base/common";
@@ -8,15 +11,25 @@
 //COMPONENTS
 @import "./components/container";
 @import "./components/section";
-@import "./components/modal-btn";
-@import "./components/social-links";
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/modal-form";
+@import "./components/social";
+@import "./components/subscribe";
+
+@import "./components/modal/backdrop";
+@import "./components/modal/modal";
+@import "./components/modal/modal-form";
+@import "./components/modal/modal-close-button";
 
 //LAYOUT
 @import "./layout/header";
-@import "./layout/hero";
-@import "./layout/about";
-@import "./layout/contact";
+@import "./layout/logo";
+@import "./layout/site-nav";
+@import "./layout/contacts";
 @import "./layout/footer";
+
+@import "./layout/main/clients";
+@import "./layout/main/command";
+@import "./layout/main/hero";
+@import "./layout/main/peculiarities";
+@import "./layout/main/samples";
+
+@import "./layout/portfolio/works";

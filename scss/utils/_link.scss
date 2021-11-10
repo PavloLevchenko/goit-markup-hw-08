@@ -1,0 +1,25 @@
+.link {
+	text-decoration: none;
+	color: inherit;
+	letter-spacing: inherit;
+	transition: color var(--transition), background-color var(--transition), border var(--transition);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	&.current {
+		color: var(--accent-color);
+
+		&:hover,
+		&:focus {
+			color: inherit;
+		}
+	}
+}
+
+.link-footer {
+	color: var(--footer-hyperlink-color);
+	letter-spacing: inherit;
+}

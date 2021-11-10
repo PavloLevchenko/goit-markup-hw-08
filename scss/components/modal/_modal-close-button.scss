@@ -1,0 +1,18 @@
+.modal-close-button {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+
+	top: 8px;
+	right: 8px;
+	color: var(--primary-black-color);
+	background: var(--primary-white-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	transition: color var(--transition);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}

@@ -1,0 +1,30 @@
+.peculiarities {
+	padding-bottom: 0;
+}
+
+.peculiarities-item {
+	width: 270px;
+	& p {
+		padding: 3px 0;
+	}
+}
+
+.peculiarities-title {
+	margin-bottom: 10px;
+
+	color: var(--common-title-color);
+	font-weight: 700;
+	font-size: var(--primary-font-size);
+	line-height: 1.17;
+	text-transform: uppercase;
+}
+
+.peculiarities-icon-container {
+	background-color: var(--secondary-white-color);
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.peculiarities-icon-container > .icon {
+	fill: var(--common-title-color);
+}

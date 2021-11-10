@@ -1,0 +1,35 @@
+.command {
+	background-color: var(--secondary-white-color);
+}
+
+.command-item {
+	width: 270px;
+	background-color: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.command-description-container {
+	margin: 30px auto;
+}
+
+.command-name,
+.command-role {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+.command-name {
+	margin-bottom: 10px;
+	color: var(--common-title-color);
+	font-weight: 500;
+}
+
+.command-role {
+	margin-bottom: 16px;
+}
+
+.command-link-social {
+	color: var(--svg-social-color);
+}
