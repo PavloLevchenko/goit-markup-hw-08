@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,gBAAgB,CAAC;EAChB,QAAQ,EAAE,mBAAmB;EAC7B,IAAI,EAAE,qBAAqB;EAAE,cAAc;EAC3C,IAAI,EAAE,wBAAwB;EAC9B,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,YAAY;EACpB,MAAM,EAAE,cAAc;EACtB,KAAK,EAAE,cAAc;EACrB,QAAQ,EAAE,MAAM;CAChB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/utils/_variables.scss",
+        "../scss/utils/_visually-hidden.scss",
+        "../scss/base/_common.scss",
+        "../scss/components/_container.scss",
+        "../scss/components/_section.scss",
+        "../scss/components/_modal-btn.scss",
+        "../scss/components/_social-links.scss",
+        "../scss/components/_backdrop.scss",
+        "../scss/components/_modal.scss",
+        "../scss/components/_modal-form.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_hero.scss",
+        "../scss/layout/_about.scss",
+        "../scss/layout/_contact.scss",
+        "../scss/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
