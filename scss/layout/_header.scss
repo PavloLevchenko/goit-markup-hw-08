@@ -3,12 +3,14 @@
 	border-bottom: 1px solid var(--header-border-color);
 }
 
-.header-link {
+.header__nav {
+	@extend %v-centered;
+}
+
+.header__link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
 
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include font(14px, 16px, 500, 0.02em);
 }

@@ -1,14 +1,19 @@
-.g-centered {
+%space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+%g-centered {
 	display: flex;
 	justify-content: center;
 }
 
-.v-centered {
+%v-centered {
 	display: flex;
 	align-items: center;
 }
 
-.centered {
+%centered {
 	display: flex;
 	align-items: center;
 	justify-content: center;

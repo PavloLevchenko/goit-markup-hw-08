@@ -3,23 +3,23 @@
 	padding: 60px 0;
 }
 
-.footer .container {
+.footer__container {
+	@extend %v-centered;
 	align-items: baseline;
 }
 
-/* address */
+.footer__logo {
+	margin-bottom: 20px;
+}
 
-.address {
+.footer__title {
+	@include font(14px, 16px, 700);
+
+	text-transform: uppercase;
 	color: var(--primary-white-color);
-	font-style: inherit;
+	margin-bottom: 20px;
 }
 
-.address-item:not(:last-child) {
-	margin-bottom: 9px;
-}
-
-/* social */
-
-.footer-social-block {
+.footer__social-block {
 	margin-left: 85px;
 }

@@ -1,0 +1,9 @@
+.address {
+	color: var(--primary-white-color);
+	font-style: inherit;
+	@include font(14px, 24px);
+}
+
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}

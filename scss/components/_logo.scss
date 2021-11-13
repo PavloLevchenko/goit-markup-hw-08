@@ -1,0 +1,17 @@
+.logo__link {
+	font-family: Raleway;
+	@include font(26px, 31px, 700, 0.03em);
+
+	display: block;
+
+	color: var(--accent-color);
+	display: flex; //убирает пробел между ссылкой и вложенными тегами
+}
+
+.logo__accent {
+	color: var(--primary-black-color);
+}
+
+.logo__accent--footer {
+	color: var(--primary-white-color);
+}

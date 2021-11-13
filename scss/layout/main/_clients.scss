@@ -1,4 +1,10 @@
-.clients-link {
+.clients__list {
+	@extend %g-centered;
+}
+
+.clients__link {
+	@extend %centered;
+
 	width: 170px;
 	height: 92px;
 	color: var(--svg-social-color);

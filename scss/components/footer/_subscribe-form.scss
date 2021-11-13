@@ -2,9 +2,8 @@
 	margin-left: 93px;
 }
 
-.subscribe-input {
-	font-size: 16px;
-	line-height: 1.25;
+.subscribe-form__input {
+	@include font(16px, 20px);
 
 	padding: 15px 16px;
 
@@ -23,21 +22,15 @@
 	}
 }
 
-.subscribe-wrapper {
+.subscribe-form__wrapper {
 	display: flex;
 }
 
-.subscribe-button {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.87;
-	letter-spacing: 0.06em;
+.subscribe-form__button {
+	@extend %centered;
+	@include font(16px, 3px, 700, 0.06em);
 
 	color: var(--primary-white-color);
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
 	margin-left: 12px;
 	padding: 10px 28px;
@@ -48,7 +41,7 @@
 	border-radius: 4px;
 }
 
-.subscribe-icon {
+.subscribe-form__icon {
 	margin-left: 10px;
 	fill: var(--primary-white-color);
 }

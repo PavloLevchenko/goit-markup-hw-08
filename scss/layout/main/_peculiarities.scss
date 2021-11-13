@@ -1,30 +1,35 @@
-.peculiarities {
+.peculiarities__section {
 	padding-bottom: 0;
 }
 
-.peculiarities-item {
+.peculiarities_list {
+	@extend %g-centered;
+}
+
+.peculiarities__item {
 	width: 270px;
-	& p {
-		padding: 3px 0;
-	}
 }
 
-.peculiarities-title {
-	margin-bottom: 10px;
+.peculiarities__icon-container {
+	@extend %centered;
 
-	color: var(--common-title-color);
-	font-weight: 700;
-	font-size: var(--primary-font-size);
-	line-height: 1.17;
-	text-transform: uppercase;
-}
-
-.peculiarities-icon-container {
 	background-color: var(--secondary-white-color);
 	height: 120px;
 	margin-bottom: 30px;
 }
 
-.peculiarities-icon-container > .icon {
+.peculiarities__icon {
 	fill: var(--common-title-color);
+}
+
+.peculiarities__title {
+	margin-bottom: 10px;
+
+	color: var(--common-title-color);
+	@include font(14px, 16px, 700);
+	text-transform: uppercase;
+}
+
+.peculiarities__text {
+	@include font(14px, 25px);
 }

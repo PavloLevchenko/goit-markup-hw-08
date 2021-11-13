@@ -1,9 +1,13 @@
-.samples-item {
+.samples__list {
+	@extend %g-centered;
+}
+
+.samples__item {
 	width: 370px;
 	position: relative;
 }
 
-.samples-description-container {
+.samples__description-container {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -12,9 +16,8 @@
 	background: rgba(47, 48, 58, 0.8);
 }
 
-.samples-title {
-	font-size: 14px;
-	line-height: 1.14;
+.samples__title {
+	@include font(14px, 16px);
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }

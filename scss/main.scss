@@ -1,30 +1,38 @@
 //UTILS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./utils/link";
-@import "./utils/centered";
-@import "./utils/button";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 //BASE
 @import "./base/common";
 
 //COMPONENTS
+@import "./components/button";
+@import "./components/link";
+@import "./components/logo";
+@import "./components/social";
+
+//modal
+@import "./components/modal/modal__backdrop";
+@import "./components/modal/modal__container";
+@import "./components/modal/modal__close-button";
+@import "./components/modal/modal-form";
+
+//header
+@import "./components/header/site-nav";
+@import "./components/header/contacts";
+
+//main
 @import "./components/container";
 @import "./components/section";
-@import "./components/social";
-@import "./components/subscribe";
 
-@import "./components/modal/backdrop";
-@import "./components/modal/modal";
-@import "./components/modal/modal-form";
-@import "./components/modal/modal-close-button";
+//footer
+@import "./components/footer/address";
+@import "./components/footer/subscribe-form";
 
 //LAYOUT
 @import "./layout/header";
-@import "./layout/logo";
-@import "./layout/site-nav";
-@import "./layout/contacts";
-@import "./layout/footer";
 
 @import "./layout/main/clients";
 @import "./layout/main/command";
@@ -32,4 +40,6 @@
 @import "./layout/main/peculiarities";
 @import "./layout/main/samples";
 
-@import "./layout/portfolio/works";
+@import "./layout/portfolio";
+
+@import "./layout/footer";

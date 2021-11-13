@@ -3,28 +3,25 @@
 	flex-direction: column;
 }
 
-.modal-form-head {
+.modal-form__head {
 	color: var(--common-title-color);
-	font-size: 20px;
-	line-height: 1.15;
-	font-weight: 700;
+	@include font(20px, 23px, 700);
 	margin-bottom: 12px;
 }
 
-.modal-form-label {
-	font-size: var(--modal-form-label);
-	line-height: 1.67;
+.modal-form__label {
+	@include font(var(--modal-form__label), 14px, 400, 0.01em);
 	margin-bottom: 4px;
 }
 
-.modal-form-wrapper {
+.modal-form__wrapper {
 	position: relative;
 	display: block;
 
 	margin-bottom: 10px;
 }
 
-.modal-form-input {
+.modal-form__input {
 	width: 100%;
 	height: 40px;
 
@@ -41,7 +38,7 @@
 	}
 }
 
-.modal-form-icon {
+.modal-form__icon {
 	display: block;
 	width: 18px;
 	height: 18px;
@@ -55,14 +52,13 @@
 	transition: color var(--transition);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__icon {
 	color: var(--accent-color);
 }
 
-.modal-form-message {
-	font-size: 12px;
-	line-height: 14px;
-	letter-spacing: 0.01em;
+.modal-form__message {
+	@include font(12px, 14px, 400, 0.01em);
+
 	color: rgba(117, 117, 117, 0.5);
 
 	width: 100%;
@@ -87,18 +83,14 @@
 	}
 }
 
-.modal-form-checkbox-label {
-	font-size: var(--primary-font-size);
-	line-height: 1.71;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.modal-form__checkbox-label {
+	@extend %centered;
+	@include font(12px, 24px, 400, 0.03em);
 
 	margin-bottom: 30px;
 }
 
-.modal-check-icon {
+.subscribe-form__check-icon {
 	color: var(--primary-white-color);
 	border: 1px solid var(--common-title-color);
 	cursor: pointer;
@@ -108,26 +100,24 @@
 		box-shadow var(--transition);
 }
 
-.modal-form-checkbox:checked + .modal-check-icon {
+.modal-form__checkbox:checked + .subscribe-form__check-icon {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 	border-color: var(--accent-color);
 }
 
-.modal-form-checkbox:focus:not(:checked) + .modal-check-icon {
+.modal-form__checkbox:focus:not(:checked) + .subscribe-form__check-icon {
 	color: transparent;
 	border-color: var(--accent-color);
 	box-shadow: inset 0 0 0 2px var(--accent-color);
 }
 
-.modal-form-policy {
+.modal-form__policy {
 	color: var(--accent-color);
 }
 
-.modal-form-button {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.875;
+.modal-form__button {
+	@include font(16px, 30px, 700, 0.06em);
 
 	width: 200px;
 

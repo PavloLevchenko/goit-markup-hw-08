@@ -8,18 +8,18 @@
 	&:focus {
 		color: var(--accent-color);
 	}
+}
 
-	&.current {
-		color: var(--accent-color);
+.link--current {
+	color: var(--accent-color);
 
-		&:hover,
-		&:focus {
-			color: inherit;
-		}
+	&:hover,
+	&:focus {
+		color: inherit;
 	}
 }
 
-.link-footer {
+.address__link {
 	color: var(--footer-hyperlink-color);
 	letter-spacing: inherit;
 }
