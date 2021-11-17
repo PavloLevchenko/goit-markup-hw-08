@@ -1,7 +1,16 @@
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1200px;
+
 	padding-left: 15px;
 	padding-right: 15px;
+	@include _phone_gap {
+		width: 480px;
+	}
+	@include _tablet_gap {
+		width: 768px;
+	}
+	@include _desktop {
+		width: 1200px;
+	}
 }

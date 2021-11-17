@@ -20,42 +20,62 @@
 	<body>
 		<!-- Шапка -->
 		<header class="header">
-			<div class="container">
+			<div class="container header__container">
 				<nav class="header__nav">
 					<a class="link logo__link" href="./">
 						Web
 						<span class="logo__accent">Studio</span>
 					</a>
-					<ul class="list site-nav__list">
-						<li class="site-nav__item">
-							<a class="link site-nav__link" href="./index.html">Студия</a>
-						</li>
-						<li class="site-nav__item">
-							<a class="link site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
-						</li>
-						<li class="site-nav__item">
-							<a class="link site-nav__link" href="">Контакты</a>
-						</li>
-					</ul>
+					<button
+						type="button"
+						class="button header-menu__button"
+						aria-expanded="false"
+						aria-controls="header-menu__container"
+						data-menu-button
+					>
+						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+							<use class="icon header-menu__close" href="./images/icons.svg#menu_close"></use>
+							<use class="icon header-menu__open" href="./images/icons.svg#menu_open"></use>
+						</svg>
+					</button>
+					<div class="header-menu__container" id="header-menu__container" data-menu>
+						<ul class="list site-nav__list">
+							<li class="site-nav__item">
+								<a class="link site-nav__link" href="./index.html">Студия</a>
+							</li>
+							<li class="site-nav__item">
+								<a class="link site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="site-nav__item">
+								<a class="link site-nav__link" href="">Контакты</a>
+							</li>
+						</ul>
 
-					<ul class="list contacts__list">
-						<li class="contacts__item">
-							<a class="link contacts__link contacts__link--current" href="mailto:info@devstudio.com">
-								<svg class="icon" width="16" height="12">
-									<use href="./images/icons.svg#envelope"></use>
-								</svg>
-								<span class="contacts__text">info@devstudio.com</span>
-							</a>
-						</li>
-						<li class="contacts__item">
-							<a class="link contacts__link" href="tel:+380961111111">
-								<svg class="icon" width="10" height="16">
-									<use href="./images/icons.svg#smartphone"></use>
-								</svg>
-								<span>+38 096 111 11 11</span>
-							</a>
-						</li>
-					</ul>
+						<ul class="list contacts__list">
+							<li class="contacts__item">
+								<a class="link contacts__link contacts__link--current" href="mailto:info@devstudio.com">
+									<svg class="icon contacts__icon" width="16" height="12">
+										<use href="./images/icons.svg#envelope"></use>
+									</svg>
+									<span class="contacts__text">info@devstudio.com</span>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a class="link contacts__link" href="tel:+380961111111">
+									<svg class="icon contacts__icon" width="10" height="16">
+										<use href="./images/icons.svg#smartphone"></use>
+									</svg>
+									<span class="contacts__text">+38 096 111 11 11</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="list header-social__list">
+							<li class="header-social__item"><a class="link header-social__link" href="">Instagram</a></li>
+							<li class="header-social__item"><a class="link header-social__link" href="">Twitter</a></li>
+							<li class="header-social__item"><a class="link header-social__link" href="">Facebook</a></li>
+							<li class="header-social__item"><a class="link header-social__link" href="">LinkedIn</a></li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -63,7 +83,7 @@
 		<main>
 			<!-- Наши работы -->
 			<section class="section works__section">
-				<div class="container">
+				<div class="container works__container">
 					<nav class="works-nav">
 						<h2 class="section-title visually-hidden">Наши работы</h2>
 						<ul class="list works-nav_list">
@@ -94,7 +114,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample1.jpg" alt="Технокряк" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample1.jpg" alt="Технокряк" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Технокряк</h3>
@@ -112,7 +132,7 @@
 										</p>
 									</div>
 									<img
-										class="img"
+										class="img works-sample__img"
 										src="./images/portfolio_sample2.jpg "
 										alt="Постер New Orlean vs Golden Star"
 										width="370"
@@ -133,7 +153,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample3.jpg" alt="Ресторан Seafood" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample3.jpg" alt="Ресторан Seafood" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Ресторан Seafood</h3>
@@ -150,7 +170,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample4.jpg" alt="Проект Prime" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample4.jpg" alt="Проект Prime" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Проект Prime</h3>
@@ -167,7 +187,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample5.jpg" alt="Проект Boxes" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample5.jpg" alt="Проект Boxes" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Проект Boxes</h3>
@@ -184,7 +204,11 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample6.jpg" alt="Inspiration has no Borders" width="370" />
+									<img
+										class="img works-sample__img"
+										src="./images/portfolio_sample6.jpg"
+										alt="Inspiration has no Borders"
+									/>
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Inspiration has no Borders</h3>
@@ -201,7 +225,11 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample7.jpg" alt="Издание Limited Edition" width="370" />
+									<img
+										class="img works-sample__img"
+										src="./images/portfolio_sample7.jpg"
+										alt="Издание Limited Edition"
+									/>
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Издание Limited Edition</h3>
@@ -218,7 +246,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample8.jpg" alt="Проект LAB" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample8.jpg" alt="Проект LAB" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Проект LAB</h3>
@@ -235,7 +263,7 @@
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
 										</p>
 									</div>
-									<img class="img" src="./images/portfolio_sample9.jpg" alt="Growing Business" width="370" />
+									<img class="img works-sample__img" src="./images/portfolio_sample9.jpg" alt="Growing Business" />
 								</div>
 								<div class="works-sample__description-container">
 									<h3 class="works-sample__name">Growing Business</h3>
@@ -329,5 +357,6 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

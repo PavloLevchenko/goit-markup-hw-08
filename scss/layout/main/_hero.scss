@@ -1,7 +1,15 @@
 .hero__section {
 	max-width: 1600px;
-	margin: 0 auto;
-	padding: 200px 0;
+
+	@include _phone {
+		padding: 118px 0;
+	}
+	@include _tablet {
+	}
+
+	@include _desktop {
+		padding: 200px 0;
+	}
 	background-color: var(--hero-bg-color);
 	text-align: center;
 	background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)),
@@ -11,9 +19,23 @@
 
 .hero__title {
 	margin: 0 auto 30px auto;
-	width: 696px;
+
+	@include _phone {
+		@include font(26px, 42px, 900, 0.06em);
+		width: 100%;
+	}
+	@include _phone_gap {
+		width: 360px;
+	}
+	@include _tablet {
+	}
+	@include _desktop {
+		width: 696px;
+		@include font(44px, 60px, 900, 0.06em);
+	}
+
 	color: var(--primary-white-color);
-	@include font(44px, 60px, 900, 0.06em);
+	text-align: center;
 	text-transform: uppercase;
 }
 

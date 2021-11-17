@@ -1,13 +1,30 @@
 .works-nav {
-	margin-bottom: 50px;
+	@include _phone {
+		margin-bottom: 40px;
+	}
+	@include _desktop {
+		margin-bottom: 50px;
+	}
 }
 
 .works-nav_list {
-	@extend %centered;
+	@include _phone {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: -15px;
+	}
+	@include _desktop {
+		@include flex_centeredXY();
+	}
 }
 
-.works-nav__item + .works-nav__item {
-	margin-left: 8px;
+.works-nav__item {
+	@include _phone {
+		margin-bottom: 15px;
+	}
+	.works-nav__item + & {
+		margin-left: 8px;
+	}
 }
 
 .works-nav__button {
@@ -24,17 +41,26 @@
 }
 
 .works-sample_list {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -30px;
-	margin-bottom: -30px;
+	@include _desktop {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
 }
 
 .works-sample {
-	flex-basis: calc(100% / 3 - 30px);
-	margin-left: 30px;
-	margin-bottom: 30px;
-	flex-basis: 370px;
+	@include _phone {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	@include _desktop {
+		flex-basis: calc(100% / 3 - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
+		flex-basis: 370px;
+	}
 	transition: box-shadow var(--transition);
 
 	&:hover {
@@ -69,6 +95,10 @@
 
 	@include font(18px, 28px);
 	color: var(--primary-white-color);
+}
+
+.works-sample__img {
+	//width: 100%;
 }
 
 .works-sample__description-container {

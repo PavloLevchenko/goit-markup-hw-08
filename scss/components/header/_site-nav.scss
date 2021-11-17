@@ -1,19 +1,30 @@
 .site-nav__list {
-	@include flex_centeredXY(false, true);
-	margin-left: 93px;
-}
+	@include _phone {
+		display: block;
+		margin-bottom: 302px;
+	}
+	@include _desktop {
+		@include flex_centeredXY(false, true);
 
-.site-nav__item {
-	position: relative;
+		margin-left: 93px;
+	}
 }
 
 .site-nav__item + .site-nav__item {
-	margin-left: 50px;
+	@include _phone {
+		margin-top: 32px;
+	}
+	@include _desktop {
+		margin-left: 50px;
+	}
 }
 
 .site-nav__link {
 	@extend .header__link;
 	color: var(--common-title-color);
+	@include _phone {
+		@include font(40px, 47px, 500, 0.02em);
+	}
 }
 
 .site-nav__link--current {
@@ -23,22 +34,22 @@
 	&:focus {
 		color: var(--common-title-color);
 	}
+	@include _desktop {
+		&::after {
+			display: inline-block;
+			content: "";
 
-	&::after {
-		display: inline-block;
-		content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background-color: #2196f3;
+			border-radius: 2px;
 
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 4px;
-		background-color: #2196f3;
-		border-radius: 2px;
-
-		transition: background-color var(--transition);
+			transition: background-color var(--transition);
+		}
 	}
-
 	&:hover::after,
 	&:focus::after {
 		background-color: var(--common-title-color);

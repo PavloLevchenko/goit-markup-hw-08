@@ -1,15 +1,29 @@
 .contacts__list {
-	@extend %v-centered;
-	margin-left: auto;
+	@include _phone {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column-reverse;
+		margin-bottom: 64px;
+	}
+
+	@include _desktop {
+		@include flex_centeredXY(false, true);
+		margin-left: auto;
+	}
 }
 
 .contacts__text {
-	margin-left: 10px;
+	@include _desktop {
+		margin-left: 10px;
+	}
 }
 
-.contacts__item {
-	@extend %centered;
-	.contacts__item + & {
+.contacts__item + .contacts__item {
+	@include _phone {
+		margin-bottom: 32px;
+	}
+	@include _desktop {
+		@include flex_centeredXY();
 		margin-left: 30px;
 	}
 }
@@ -17,13 +31,29 @@
 .contacts__link {
 	@extend .header__link;
 	color: var(--primary-text-color);
+	@include _phone {
+		@include font(40px, 47px, 500, 0.02em);
+		color: var(--accent-color);
+	}
+}
+
+.contacts__icon {
+	@include _phone {
+		display: none;
+	}
 }
 
 .contacts__link--current {
-	color: var(--accent-color);
+	@include _phone {
+		color: var(--primary-text-color);
+		@include font(24px, 28px, 500, 0.02em);
+	}
+	@include _desktop {
+		color: var(--accent-color);
 
-	&:hover,
-	&:focus {
-		color: inherit;
+		&:hover,
+		&:focus {
+			color: inherit;
+		}
 	}
 }

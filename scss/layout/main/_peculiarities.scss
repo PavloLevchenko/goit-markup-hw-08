@@ -3,19 +3,29 @@
 }
 
 .peculiarities_list {
-	@extend %g-centered;
+	@include _desktop {
+		@include flex_centeredXY(true, false);
+	}
 }
 
 .peculiarities__item {
-	width: 270px;
+	@include _phone {
+	}
+
+	@include _tablet {
+	}
+
+	@include _desktop {
+		width: 270px;
+	}
 }
 
 .peculiarities__icon-container {
-	@extend %centered;
-
-	background-color: var(--secondary-white-color);
+	@include flex_centeredXY();
 	height: 120px;
 	margin-bottom: 30px;
+
+	background-color: var(--secondary-white-color);
 }
 
 .peculiarities__icon {
@@ -28,6 +38,8 @@
 	color: var(--common-title-color);
 	@include font(14px, 16px, 700);
 	text-transform: uppercase;
+
+	text-align: center;
 }
 
 .peculiarities__text {

@@ -1,5 +1,18 @@
+.samples__section {
+	@include _phone {
+		display: none;
+	}
+	@include _tablet {
+	}
+
+	@include _desktop {
+	}
+}
+
 .samples__list {
-	@extend %g-centered;
+	@include _desktop {
+		@include flex_centeredXY(true, false);
+	}
 }
 
 .samples__item {

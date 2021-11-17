@@ -1,0 +1,48 @@
+.header-menu__button {
+	display: block;
+	margin-left: auto;
+	z-index: 3;
+	background-color: transparent;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+
+	@include _tablet_gap {
+		display: none;
+	}
+}
+
+.header-menu__button .header-menu__close {
+	display: none;
+}
+
+.header-menu__button.is-open .header-menu__close {
+	display: block;
+}
+
+.header-menu__button.is-open .header-menu__open {
+	display: none;
+}
+
+.header-menu__container {
+	background-color: var(--primary-white-color);
+	position: absolute;
+	z-index: 2;
+	padding: 48px 40px;
+
+	@include _phone {
+		display: none;
+
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+
+		overflow: scroll;
+		&.is-open {
+			display: block;
+		}
+	}
+}

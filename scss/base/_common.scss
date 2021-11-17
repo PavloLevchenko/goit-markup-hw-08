@@ -7,6 +7,11 @@ body {
 	font-style: normal;
 }
 
+body.modal-open,
+body.menu-open {
+	overflow: hidden;
+}
+
 .list {
 	padding: 0;
 	margin: 0;
@@ -16,6 +21,7 @@ body {
 .img {
 	display: block;
 	max-width: 100%;
+	height: auto;
 }
 
 p,
