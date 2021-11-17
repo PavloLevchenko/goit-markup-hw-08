@@ -28,21 +28,24 @@
 
 .header-menu__container {
 	background-color: var(--primary-white-color);
-	position: absolute;
-	z-index: 2;
-	padding: 48px 40px;
+	width: 100vw;
 
 	@include _phone {
+		position: absolute;
+		z-index: 2;
+		padding: 48px 40px;
 		display: none;
 
+		height: 100vh;
 		top: 0;
 		left: 0;
-		width: 100vw;
-		height: 100vh;
 
 		overflow: scroll;
 		&.is-open {
 			display: block;
 		}
+	}
+	@include _desktop {
+		@include flex_centeredXY(true, false);
 	}
 }

@@ -5,12 +5,22 @@
 
 .modal-form__head {
 	color: var(--common-title-color);
-	@include font(20px, 23px, 700);
+	@include _phone {
+		@include font(20px, 30px, 700);
+	}
+
+	@include _tablet {
+	}
+
+	@include _desktop {
+		@include font(20px, 23px, 700);
+	}
+
 	margin-bottom: 12px;
 }
 
 .modal-form__label {
-	@include font(var(--modal-form__label), 14px, 400, 0.01em);
+	@include font(12px, 14px, 400, 0.01em);
 	margin-bottom: 4px;
 }
 
@@ -57,7 +67,16 @@
 }
 
 .modal-form__message {
-	@include font(12px, 14px, 400, 0.01em);
+	@include _phone {
+		@include font(14px, 16px, 400, 0.01em);
+	}
+
+	@include _tablet {
+	}
+
+	@include _desktop {
+		@include font(12px, 14px, 400, 0.01em);
+	}
 
 	color: rgba(117, 117, 117, 0.5);
 
@@ -84,8 +103,18 @@
 }
 
 .modal-form__checkbox-label {
-	@extend %centered;
-	@include font(12px, 24px, 400, 0.03em);
+	@include flex_centeredXY();
+
+	@include _phone {
+		@include font(12px, 14px, 400, 0.03em);
+	}
+
+	@include _tablet {
+	}
+
+	@include _desktop {
+		@include font(12px, 24px, 400, 0.03em);
+	}
 
 	margin-bottom: 30px;
 }
