@@ -3,9 +3,7 @@
 }
 
 .social__item + .social__item {
-	@include _desktop {
-		margin-left: 10px;
-	}
+	margin-left: 10px;
 }
 
 .social__link {

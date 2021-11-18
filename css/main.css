@@ -154,10 +154,8 @@ h6 {
   justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .social__item + .social__item {
-    margin-left: 10px;
-  }
+.social__item + .social__item {
+  margin-left: 10px;
 }
 
 .social__link {
@@ -1431,6 +1429,7 @@ h6 {
 
 .footer__logo {
   display: block;
+  padding: 0;
   margin-bottom: 20px;
 }
 
