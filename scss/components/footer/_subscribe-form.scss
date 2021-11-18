@@ -11,6 +11,10 @@
 		margin-bottom: 30px;
 		width: 100%;
 	}
+	@include _tablet {
+		margin-bottom: 20px;
+		width: 450px;
+	}
 	@include _desktop {
 		width: 358px;
 	}
@@ -30,12 +34,12 @@
 }
 
 .subscribe-form__wrapper {
-	@include _phone {
-		flex-direction: column;
-		@include flex_centeredXY();
-	}
+	@include flex_centeredXY();
+	flex-direction: column;
+
 	@include _desktop {
 		display: flex;
+		flex-direction: row;
 	}
 }
 

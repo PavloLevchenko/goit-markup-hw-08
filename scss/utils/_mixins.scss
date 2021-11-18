@@ -71,14 +71,8 @@
 	}
 }
 
-@mixin _tablet_gap {
-	@media screen and (min-width: 769px) {
-		@content;
-	}
-}
-
 @mixin _tablet {
-	@media screen and (max-width: 1199px) {
+	@media screen and (max-width: 1199px) and (min-width: 768px) {
 		@content;
 	}
 }

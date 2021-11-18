@@ -7,7 +7,7 @@
 	@include _phone_gap {
 		width: 480px;
 	}
-	@include _tablet_gap {
+	@include _tablet {
 		width: 768px;
 	}
 	@include _desktop {

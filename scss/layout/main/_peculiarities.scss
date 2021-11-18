@@ -1,20 +1,27 @@
 .peculiarities__section {
-	padding-bottom: 0;
+	@include _desktop {
+		padding-bottom: 0;
+	}
 }
 
 .peculiarities_list {
+	@include _tablet {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
 	@include _desktop {
 		@include flex_centeredXY(true, false);
 	}
 }
 
 .peculiarities__item {
-	@include _phone {
-	}
-
 	@include _tablet {
+		flex-basis: calc(100% / 2 - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
 	}
-
 	@include _desktop {
 		width: 270px;
 	}
@@ -38,8 +45,11 @@
 	color: var(--common-title-color);
 	@include font(14px, 16px, 700);
 	text-transform: uppercase;
-
 	text-align: center;
+
+	@include _tablet {
+		text-align: left;
+	}
 }
 
 .peculiarities__text {

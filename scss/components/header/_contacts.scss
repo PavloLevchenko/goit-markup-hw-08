@@ -5,7 +5,11 @@
 		flex-direction: column-reverse;
 		margin-bottom: 64px;
 	}
-
+	@include _tablet {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+	}
 	@include _desktop {
 		@include flex_centeredXY(false, true);
 		margin-left: auto;
@@ -13,6 +17,9 @@
 }
 
 .contacts__text {
+	@include _tablet {
+		margin-left: 8px;
+	}
 	@include _desktop {
 		margin-left: 10px;
 	}
@@ -29,10 +36,15 @@
 }
 
 .contacts__link {
-	@extend .header__link;
+	display: block;
 	color: var(--primary-text-color);
+	@include font(14px, 16px, 500, 0.02em);
+
+	padding: 5px 0;
+
 	@include _phone {
 		@include font(40px, 47px, 500, 0.02em);
+		font-size: 8vw;
 		color: var(--accent-color);
 	}
 }

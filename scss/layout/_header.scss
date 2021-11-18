@@ -5,49 +5,26 @@
 }
 
 .header__container {
-	@include _phone {
-		padding: 0;
-	}
+	width: 100%;
 }
 
 .header__nav {
-	@include _phone {
-		padding: 10px 15px;
-	}
-
-	@include _tablet {
-	}
-
-	@include _desktop {
-	}
 	@include flex_centeredXY(false, true);
 }
 
-.header__link {
-	@include _tablet {
-	}
-
-	@include _desktop {
-		padding-top: 32px;
-		padding-bottom: 32px;
-
-		@include font(14px, 16px, 500, 0.02em);
-		display: block;
-	}
-}
-
 .header-social__list {
+	display: none;
 	@include _phone {
 		@include flex_centeredXY(false, true);
+		flex-wrap: wrap;
 	}
-	@include _tablet_gap {
-		display: none;
-	}
+	margin-top: -10px;
 }
 
 .header-social__item {
 	@include font(18px, 22px, 500, 0.02em);
 	color: rgba(33, 150, 243, 1);
+	margin-top: 10px;
 }
 
 .header-social__item:not(:last-child)::after {

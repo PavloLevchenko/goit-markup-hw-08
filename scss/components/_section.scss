@@ -1,4 +1,4 @@
-.section-title {
+.section__title {
 	@include font(28px, 33px, 700);
 	margin-bottom: 30px;
 
@@ -19,25 +19,19 @@
 	background-color: var(--primary-white-color);
 	padding: 60px 0;
 
-	@include _tablet {
-	}
-
 	@include _desktop {
 		padding: 94px 0;
 	}
 }
+.section__list {
+}
+
 .section__item {
 	margin: 0 auto;
 	@include _phone {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
-	}
-	@include _tablet {
-	}
-
-	@include _desktop {
-		width: 270px;
 	}
 }
 

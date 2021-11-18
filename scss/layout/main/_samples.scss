@@ -1,11 +1,7 @@
 .samples__section {
-	@include _phone {
-		display: none;
-	}
-	@include _tablet {
-	}
-
+	display: none;
 	@include _desktop {
+		display: block;
 	}
 }
 

@@ -1,5 +1,43 @@
+.header-menu__container {
+	background-color: var(--primary-white-color);
+	width: 100vw;
+	@include _phone {
+		padding: 48px 40px;
+
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		display: none;
+		&.is-open {
+			z-index: 2;
+			overflow-y: scroll;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	@include _tablet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	@include _desktop {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
 .header-menu__button {
-	display: block;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	height: 40px;
+	width: 40px;
+
+	line-height: 0;
+	display: none;
 	margin-left: auto;
 	z-index: 3;
 	background-color: transparent;
@@ -8,9 +46,8 @@
 	&:focus {
 		color: var(--accent-color);
 	}
-
-	@include _tablet_gap {
-		display: none;
+	@include _phone {
+		display: block;
 	}
 }
 
@@ -24,28 +61,4 @@
 
 .header-menu__button.is-open .header-menu__open {
 	display: none;
-}
-
-.header-menu__container {
-	background-color: var(--primary-white-color);
-	width: 100vw;
-
-	@include _phone {
-		position: absolute;
-		z-index: 2;
-		padding: 48px 40px;
-		display: none;
-
-		height: 100vh;
-		top: 0;
-		left: 0;
-
-		overflow: scroll;
-		&.is-open {
-			display: block;
-		}
-	}
-	@include _desktop {
-		@include flex_centeredXY(true, false);
-	}
 }

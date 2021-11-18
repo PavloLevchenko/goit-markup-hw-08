@@ -1,7 +1,12 @@
 .site-nav__list {
+	display: block;
+
 	@include _phone {
-		display: block;
-		margin-bottom: 302px;
+		margin-bottom: auto;
+	}
+	@include _tablet {
+		@include flex_centeredXY(false, true);
+		margin-left: 88px;
 	}
 	@include _desktop {
 		@include flex_centeredXY(false, true);
@@ -14,15 +19,25 @@
 	@include _phone {
 		margin-top: 32px;
 	}
+	@include _tablet {
+		margin-left: 50px;
+	}
 	@include _desktop {
 		margin-left: 50px;
 	}
 }
 
 .site-nav__link {
-	@extend .header__link;
+	display: block;
 	color: var(--common-title-color);
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	@include font(14px, 16px, 500, 0.02em);
+
 	@include _phone {
+		padding: 0;
 		@include font(40px, 47px, 500, 0.02em);
 	}
 }
@@ -35,20 +50,23 @@
 	&:focus {
 		color: var(--common-title-color);
 	}
-	@include _desktop {
-		&::after {
-			display: inline-block;
-			content: "";
 
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 4px;
-			background-color: #2196f3;
-			border-radius: 2px;
+	&::after {
+		display: inline-block;
+		content: "";
 
-			transition: background-color var(--transition);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background-color: #2196f3;
+		border-radius: 2px;
+
+		transition: background-color var(--transition);
+
+		@include _phone {
+			display: none;
 		}
 	}
 	&:hover::after,

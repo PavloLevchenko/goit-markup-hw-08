@@ -4,19 +4,24 @@
 }
 
 .footer__container {
-	@include _phone {
-		text-align: center;
+	text-align: center;
+	@include _tablet {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 	@include _desktop {
 		@include flex_centeredXY(true, false);
 		align-items: baseline;
+		text-align: left;
 	}
 }
 
 .address-block {
-	@include _phone {
-		margin-bottom: 60px;
+	margin-bottom: 60px;
+	@include _desktop {
+		margin-bottom: 0;
 	}
 }
 
@@ -36,6 +41,9 @@
 .footer__social-block {
 	@include _phone {
 		margin-bottom: 60px;
+	}
+	@include _tablet {
+		margin-left: 165px;
 	}
 	@include _desktop {
 		margin-left: 85px;

@@ -2,6 +2,9 @@
 	@include _phone {
 		margin-bottom: 40px;
 	}
+	@include _tablet {
+		margin-bottom: 30px;
+	}
 	@include _desktop {
 		margin-bottom: 50px;
 	}
@@ -12,6 +15,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: -15px;
+	}
+	@include _tablet {
+		@include flex_centeredXY();
 	}
 	@include _desktop {
 		@include flex_centeredXY();
@@ -41,6 +47,12 @@
 }
 
 .works-sample_list {
+	@include _tablet {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
 	@include _desktop {
 		display: flex;
 		flex-wrap: wrap;
@@ -55,13 +67,19 @@
 			margin-bottom: 30px;
 		}
 	}
+	@include _tablet {
+		flex-basis: calc(100% / 2 - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
 	@include _desktop {
 		flex-basis: calc(100% / 3 - 30px);
 		margin-left: 30px;
 		margin-bottom: 30px;
-		flex-basis: 370px;
 	}
 	transition: box-shadow var(--transition);
+	border: 1px solid var(--works-border-color);
+	border-top: 0;
 
 	&:hover {
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -103,8 +121,6 @@
 
 .works-sample__description-container {
 	padding: 20px 24px;
-	border: 1px solid var(--works-border-color);
-	border-top: 0;
 }
 
 .works-sample__name {

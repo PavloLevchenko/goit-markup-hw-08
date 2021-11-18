@@ -5,6 +5,7 @@
 		padding: 118px 0;
 	}
 	@include _tablet {
+		padding: 118px 0;
 	}
 
 	@include _desktop {
@@ -28,6 +29,7 @@
 		width: 360px;
 	}
 	@include _tablet {
+		@include font(26px, 42px, 900, 0.06em);
 	}
 	@include _desktop {
 		width: 696px;
