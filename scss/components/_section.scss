@@ -1,8 +1,7 @@
 .section__title {
-	@include font(28px, 33px, 700);
-	margin-bottom: 30px;
-
-	@include _tablet {
+	@include _phone_and_tablet {
+		@include font(28px, 33px, 700);
+		margin-bottom: 30px;
 	}
 
 	@include _desktop {
@@ -22,8 +21,6 @@
 	@include _desktop {
 		padding: 94px 0;
 	}
-}
-.section__list {
 }
 
 .section__item {

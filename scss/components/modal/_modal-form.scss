@@ -4,12 +4,10 @@
 }
 
 .modal-form__head {
+	text-align: center;
 	color: var(--common-title-color);
-	@include _phone {
+	@include _phone_and_tablet {
 		@include font(20px, 30px, 700);
-	}
-
-	@include _tablet {
 	}
 
 	@include _desktop {
@@ -67,11 +65,8 @@
 }
 
 .modal-form__message {
-	@include _phone {
+	@include _phone_and_tablet {
 		@include font(14px, 16px, 400, 0.01em);
-	}
-
-	@include _tablet {
 	}
 
 	@include _desktop {
@@ -105,11 +100,8 @@
 .modal-form__checkbox-label {
 	@include flex_centeredXY();
 
-	@include _phone {
+	@include _phone_and_tablet {
 		@include font(12px, 14px, 400, 0.03em);
-	}
-
-	@include _tablet {
 	}
 
 	@include _desktop {

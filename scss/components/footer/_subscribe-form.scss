@@ -34,8 +34,10 @@
 }
 
 .subscribe-form__wrapper {
-	@include flex_centeredXY();
-	flex-direction: column;
+	@include _phone_and_tablet {
+		@include flex_centeredXY();
+		flex-direction: column;
+	}
 
 	@include _desktop {
 		display: flex;

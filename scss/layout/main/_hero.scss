@@ -13,14 +13,19 @@
 	@include _phone {
 		@include _hero_gradient("hero_img_m");
 		max-width: 480px;
+	}
+	@include _phone_and_tablet {
+		height: 400px;
 		padding: 118px 0;
 	}
+
 	@include _tablet {
 		@include _hero_gradient("hero_img_t");
 		max-width: 768px;
 	}
 	@include _desktop {
 		@include _hero_gradient("hero_img_d");
+		height: 600px;
 		max-width: 1600px;
 		padding: 200px 0;
 	}
@@ -29,16 +34,11 @@
 .hero__title {
 	margin: 0 auto 30px auto;
 
-	@include _phone {
+	@include _phone_and_tablet {
 		@include font(26px, 42px, 900, 0.06em);
 		width: 100%;
 	}
-	@include _phone_gap {
-		width: 360px;
-	}
-	@include _tablet {
-		@include font(26px, 42px, 900, 0.06em);
-	}
+
 	@include _desktop {
 		width: 696px;
 		@include font(44px, 60px, 900, 0.06em);

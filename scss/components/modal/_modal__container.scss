@@ -3,12 +3,9 @@
 	top: 50%;
 	left: 50%;
 
-	@include _phone {
+	@include _phone_and_tablet {
 		min-height: 609px;
 		min-width: 450px;
-	}
-
-	@include _tablet {
 	}
 
 	@include _desktop {

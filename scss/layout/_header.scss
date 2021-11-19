@@ -4,10 +4,6 @@
 	position: relative;
 }
 
-.header__container {
-	width: 100%;
-}
-
 .header__nav {
 	@include flex_centeredXY(false, true);
 }
