@@ -1,21 +1,29 @@
 .hero__section {
-	max-width: 1600px;
+	text-align: center;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: var(--hero-bg-color);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 	@include _phone {
+		@include _hero_gradient("hero_img_m");
+		max-width: 480px;
 		padding: 118px 0;
 	}
 	@include _tablet {
-		padding: 118px 0;
+		@include _hero_gradient("hero_img_t");
+		max-width: 768px;
 	}
-
 	@include _desktop {
+		@include _hero_gradient("hero_img_d");
+		max-width: 1600px;
 		padding: 200px 0;
 	}
-	background-color: var(--hero-bg-color);
-	text-align: center;
-	background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)),
-		url("../images/hero_img.jpg");
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero__title {
