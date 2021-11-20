@@ -26,7 +26,7 @@
 }
 
 .samples__title {
-	@include font(14px, 16px);
+	@include font(14px, 16px, 700);
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }

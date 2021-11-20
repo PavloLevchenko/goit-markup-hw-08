@@ -170,6 +170,7 @@ h6 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--svg-social-color);
 }
 
 .social__link:hover, .social__link:focus {
@@ -906,6 +907,9 @@ h6 {
 .header {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__container {
   position: relative;
 }
 
@@ -1241,7 +1245,13 @@ h6 {
   text-align: center;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .peculiarities__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .peculiarities__title {
     text-align: left;
   }
@@ -1287,7 +1297,7 @@ h6 {
 
 .samples__title {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;

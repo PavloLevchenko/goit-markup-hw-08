@@ -45,9 +45,13 @@
 	color: var(--common-title-color);
 	@include font(14px, 16px, 700);
 	text-transform: uppercase;
+
+	@include _phone {
+		text-align: left;
+	}
 	text-align: center;
 
-	@include _tablet {
+	@include _tablet_and_desktop {
 		text-align: left;
 	}
 }
